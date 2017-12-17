@@ -6,16 +6,20 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+head,body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 .center {
     margin: auto;
     width: 60%;
     border: 3px solid #73AD21;
     padding: 10px;
 }
+body {
+  padding-top: 87px; /*50px for the height of the navbar + 37px for the offset*/
+  padding-bottom: 50px; /*50px for the height of the bottom navbar*/
+}
 </style>
-<body>
 
+<head>
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
@@ -35,10 +39,11 @@ body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">Share</a>
-  <span class="w3-margin-right">Get Outfit</span>
+  <span class="w3-button w3-right">Get Outfit</span>
 </header>
-
-<div class="w3-center"><img src="flapjpg.jpg" alt="Smiley face" height="400" width="300"></div>
+</head>
+<body>
+<div class="w3-center"><img src="flapjpg.jpg" alt="Smiley face" height="300" width="105"></div>
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
@@ -53,4 +58,3 @@ body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 
 </body>
 </html>
-
