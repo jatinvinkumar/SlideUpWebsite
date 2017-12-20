@@ -21,7 +21,7 @@ img {
 head {
 	postion:fixed;
 }
-body {
+body{
   padding-top: 70px; /*50px for the height of the navbar + 37px for the offset*/
   padding-bottom: 0px; /*50px for the height of the bottom navbar*/
   margin: 0; height: 100%; overflow: hidden
@@ -73,6 +73,19 @@ color:#FFF;
 padding:5px 0 0;
 display:block;
 }
+	
+.bg {
+    /* The image used */
+    background-image: "fashionShow.jpg";
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 </style>
 
 <head>
@@ -100,7 +113,7 @@ display:block;
 </head>
 
 
-<body style="overflow:hidden;">
+<body class="bg" style="overflow:hidden;">
 
 <div class="w3-center"><img src="Model.png" alt="Agac'i Model" height="300" width="150"></div>
 	
