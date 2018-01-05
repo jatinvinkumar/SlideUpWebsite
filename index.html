@@ -14,10 +14,17 @@ head,body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif;}
     border: 3px solid #73AD21;
     padding: 10px;
 }
+.two{
+  z-index: 999;
+  position: absolute;
+  padding-top: 0px;
+  padding-left: 10px;
+}
 img {
     max-width: 100%;
     max-height: 100%;
     height: 100%;
+    border-radius: 5px;
 }
 head {
 	postion:fixed;
@@ -25,7 +32,10 @@ head {
 body {
   padding-top: 70px; /*50px for the height of the navbar + 37px for the offset*/
   padding-bottom: 0px; /*50px for the height of the bottom navbar*/
-  margin: 0; height: 100%; overflow: hidden
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
 }
 #moduleContent18520661 {
     position: fixed;
@@ -94,42 +104,33 @@ display:block;
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">Share</a>
+<header class="w3-container w3-top w3-hide-large w3-pink w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-pink w3-margin-right" onclick="w3_open()">Share</a>
   <span class="w3-button w3-right">Get Outfit</span>
 </header>
 </head>
 
+<div class="sketchfab-embed-wrapper"><iframe width=100% height="370px" src="https://sketchfab.com/models/ce18b0f58cba47e2b1f34a50ea31c348/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe></div>
 
-<body style="overflow:hidden;">
-
-<div class="w3-center"><div class="sketchfab-embed-wrapper"><iframe width=100% height="400px" src="https://sketchfab.com/models/ce18b0f58cba47e2b1f34a50ea31c348/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
-
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/ce18b0f58cba47e2b1f34a50ea31c348?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Zhenya</a>
-    by <a href="https://sketchfab.com/itseez3d?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">itSeez3D</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div></div>
-.parent{overflow:hidden;}
-<div id="scroll" height="80px" class="w3-container">
-  <div class="dropup">
-    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Jeans
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#"></a></li>
-      <li onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</li>
-      <li><a href="#">Accessories</a></li>
-      <li class="divider"></li>
-      <li><a href="#">Dresses</a></li>
-    </ul>
-  </div>
+<div class="dropup w3-left two">
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Jeans
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li onclick="document.getElementById('myImage').src='pic_bulbon.gif'"><a href="#">Pants</a></li>
+    <li ></li>
+    <li class="divider"></li>
+    <li><a href="#">Accessories</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Dresses</a></li>
+  </ul>
 </div>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<div id="scroll" height="80"class="w3-center w3-red" style="width:100%;font-weight:bold;">
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div id="scroll" height="80"class="w3-center w3-pink" style="width:100%;font-weight:bold;">
 <ul>
 <li><a href="#"><img src="jean1.jpg" alt="" height="100" width="100"><span>Jeans Name</span></a></li>
 <li><a href="#"><img src="jean2.jpg" alt="" height="100" width="100"><span>Jeans Name</span></a></li>
