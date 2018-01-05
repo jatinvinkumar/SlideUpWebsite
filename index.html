@@ -16,9 +16,12 @@ head,body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif;}
 }
 .two{
   z-index: 999;
-  position: absolute;
+position: absolute;
   padding-top: 0px;
   padding-left: 10px;
+}
+.model{
+  position: absolute;
 }
 img {
     max-width: 100%;
@@ -50,7 +53,7 @@ margin:auto;
 background:#A3CBE0;
 border:0px solid #000;
 overflow:auto;
-position:absolute;
+position: absolute;
 bottom:0;
 box-shadow:0 0 0px #000;
 }
@@ -110,7 +113,9 @@ display:block;
 </header>
 </head>
 
-<div class="sketchfab-embed-wrapper"><iframe width=100% height="370px" src="https://sketchfab.com/models/ce18b0f58cba47e2b1f34a50ea31c348/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe></div>
+<body>
+
+<div class="sketchfab-embed-wrapper model" width=100% ><iframe style="width:100vw" height="385px" src="https://sketchfab.com/models/ce18b0f58cba47e2b1f34a50ea31c348/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe></div>
 
 <div class="dropup w3-left two">
   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Jeans
@@ -130,7 +135,7 @@ display:block;
   <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 
-<div id="scroll" height="80"class="w3-center w3-pink" style="width:100%;font-weight:bold;">
+<div id="scroll" class="w3-left w3-pink" style="width:100%;font-weight:bold;">
 <ul>
 <li><a href="#"><img src="jean1.jpg" alt="" height="100" width="100"><span>Jeans Name</span></a></li>
 <li><a href="#"><img src="jean2.jpg" alt="" height="100" width="100"><span>Jeans Name</span></a></li>
@@ -143,11 +148,6 @@ display:block;
 <li><a href="#"><img src="jean1.jpg" alt="" height="100" width="100"><span>Jeans Name</span></a></li>
 </ul>
 </div>
-<script>
-function clickedTops {
-
-}
-</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
